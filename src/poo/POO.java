@@ -7,7 +7,7 @@ package poo;
 
 /**
  *
- * @author francisco
+ * @author Francisco Aramburu
  */
 public class POO {
 
@@ -16,16 +16,15 @@ public class POO {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Restaurante v1 = new Restaurante();
-        v1.agregaMesa(1);
-        v1.agregaMesa(1);
-        v1.agregaMesa(1);
-        v1.agregaMesa(1);
-        v1.agregaMesa(1);
+      
+        Administrativo e = new Administrativo("casa", "555555552", "Pedro", 56.2);
+        System.out.println(e);
+        Operario o = new Operario(15,"Juan",56.2);
         
+        System.out.println(o);
+        System.out.println(e.calculaSalario(25, 5));
+        System.out.println(o.calculaSalario(25, 5,1));
         
-        System.out.println(v1.calcManteles());
-        System.out.println(v1.calcMetros());
     }
     
 }

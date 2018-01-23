@@ -7,7 +7,7 @@ package poo;
 
 /**
  *
- * @author EDI
+ * @author Francisco Aramburu
  */
 public class Alumno implements Comparable <Alumno>{
     

@@ -7,7 +7,7 @@ package poo;
 
 /**
  *
- * @author francisco
+ * @author Francisco Aramburu
  */
 //perro
 public class Rectangulo {

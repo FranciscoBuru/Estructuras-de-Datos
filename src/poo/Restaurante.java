@@ -7,7 +7,7 @@ package poo;
 
 /**
  *
- * @author francisco
+ * @author Francisco Aramburu
  */
 public class Restaurante {
     
