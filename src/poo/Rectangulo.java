@@ -9,6 +9,7 @@ package poo;
  *
  * @author francisco
  */
+//perro
 public class Rectangulo {
     private double base, altura;
 
