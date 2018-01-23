@@ -7,7 +7,7 @@ package poo;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class Empleado {
     private static int serie = 100;
