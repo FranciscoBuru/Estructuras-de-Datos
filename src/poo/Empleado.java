@@ -67,7 +67,7 @@ public class Empleado {
 	
 	public double calculaSalario(double pres, double ded) {
 		
-		return sueldoBase + pres*sueldoBase - pres*sueldoBase;
+		return sueldoBase + pres*sueldoBase - ded*sueldoBase;
 		
 		
 	}

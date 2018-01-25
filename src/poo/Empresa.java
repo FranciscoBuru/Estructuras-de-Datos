@@ -7,13 +7,56 @@ package poo;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class Empresa {
     
     private String nomEmp, duenio, direccion;
-    private Empleado[] arre = new Empleado [100];
+    private Operario[] arreO;
+    private Administrativo[] arreA;
+    private int op, ad;
+
+    public Empresa() {
     
-    //ACABAR...
+        arreO = new Operario[200];
+        arreA = new Administrativo [200];
+        op =0;
+        ad=0;
+    
+    }
+
+    public Empresa(String nomEmp, String duenio, String direccion) {
+        this.nomEmp = nomEmp;
+        this.duenio = duenio;
+        this.direccion = direccion;
+        arreO = new Operario[200];
+        arreA = new Administrativo [200];
+        op =0;
+        ad=0;
+    }
+    
+    public void altaAdm(String departamento, String telefono, String nombreEmpleado, double sueldoBase){
+    
+        Administrativo a1 = new Administrativo(departamento, telefono, nombreEmpleado, sueldoBase);
+        arreA[ad]=a1;
+        ad++;
+        
+    }
+    
+    public void altaOpe(int horasExtra, String nombreEmpleado, double sueldoBase){
+    
+        Operario o1 = new Operario( horasExtra,  nombreEmpleado,  sueldoBase);
+        arreO[op]=o1;
+        op++;
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
     
 }
