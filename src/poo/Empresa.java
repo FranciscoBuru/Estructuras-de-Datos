@@ -76,7 +76,7 @@ public class Empresa {
     }
     
     //También podrias hacer busqueda binaria... 
-    //En vez de dos metodos pones solo uno qe busque un object
+    //En vez de dos metodos pones solo uno que busque un object
     public int buscaAdmin(int n){
     
     
