@@ -35,4 +35,10 @@ public class Administrativo extends Empleado {
 		return super.toString() + "\nAdministrativo \nDepartamento: " + departamento + "\nTeléfono: " + telefono;
 	
         }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+        
+        
 }

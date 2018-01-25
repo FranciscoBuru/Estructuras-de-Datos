@@ -71,4 +71,14 @@ public class Empleado {
 		
 		
 	}
+
+    public int getClaveEmpleado() {
+        return claveEmpleado;
+    }
+
+    public void setSueldoBase(double sueldoBase) {
+        this.sueldoBase = sueldoBase;
+    }
+        
+        
 }
