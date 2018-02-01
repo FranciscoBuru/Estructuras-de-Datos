@@ -2,20 +2,16 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
-*/
-
-package poo;
+ */
+package Interface;
 
 /**
  *
- * @author Francisco Aramburu
- * 
+ * @author edi
  */
-
-public abstract class AlumnoNivelSup extends Alumno3 {
+public interface EjemploInterface {
     
-    
-    
-    
+    public int haceAlgo();
+    public boolean haceOtraCosa(double dato);
     
 }

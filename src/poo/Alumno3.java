@@ -9,15 +9,15 @@ package poo;
  *
  * @author Francisco Aramburu
  */
-public class Alumno3 {
+public abstract class Alumno3 {
     
     
     private String nom, curp, nacim, nomMad, nomPad, nomTut, nivel;
 
-    public Alumno3() {
+    protected Alumno3() {
     }
 
-    public Alumno3(String nom, String curp, String nacim, String nomMad, String nomPad, String nivel) {
+    protected Alumno3(String nom, String curp, String nacim, String nomMad, String nomPad, String nivel) {
         this.nom = nom;
         this.curp = curp;
         this.nacim = nacim;
@@ -26,7 +26,7 @@ public class Alumno3 {
         this.nivel = nivel;
     }
 
-    public Alumno3(String nom, String curp, String nacim, String nomTut, String nivel) {
+    protected Alumno3(String nom, String curp, String nacim, String nomTut, String nivel) {
         this.nom = nom;
         this.curp = curp;
         this.nacim = nacim;
