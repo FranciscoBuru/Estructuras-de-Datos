@@ -7,10 +7,11 @@ package AbstractasConInterfaces;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 
 //Interface
+//Primer ejercicio de Polimorfismo, 9 cuaderno de ejercicios.
 public interface FigGeome {
  
     public double calcArea();

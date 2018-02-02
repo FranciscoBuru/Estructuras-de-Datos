@@ -7,7 +7,7 @@ package Interface;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 //Marca error hasta que sobreescribas los metodos en interface
 public class ClaseConInterface implements EjemploInterface {

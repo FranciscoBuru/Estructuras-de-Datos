@@ -7,7 +7,7 @@ package abstractas;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class Admisitrativo extends Empleado {
     

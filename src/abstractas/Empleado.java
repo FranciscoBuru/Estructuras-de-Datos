@@ -7,7 +7,7 @@ package abstractas;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 
 //No ahorra códico, solo ayuda a organizar

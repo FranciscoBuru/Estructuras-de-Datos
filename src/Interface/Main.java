@@ -10,7 +10,7 @@ import static Interface.Avion.*;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class Main {
     

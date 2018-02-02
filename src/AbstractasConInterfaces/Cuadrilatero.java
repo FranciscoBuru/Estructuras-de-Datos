@@ -7,9 +7,10 @@ package AbstractasConInterfaces;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 //Abstracta
+//Primer ejercicio de Polimorfismo, 9 cuaderno de ejercicios.
 public abstract class Cuadrilatero implements FigGeome {
     
     private double altura , base ;

@@ -7,19 +7,20 @@ package AbstractasConInterfaces;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 //Clase particular
+//Primer ejercicio de Polimorfismo, 9 cuaderno de ejercicios.
 public class Circulo implements FigGeome {
     
-    double radio, perimetro;
+    double radio;
 
     public Circulo() {
     }
 
-    public Circulo(double radio, double perimetro) {
+    public Circulo(double radio) {
         this.radio = radio;
-        this.perimetro = perimetro;
+        
     }
 
     @Override

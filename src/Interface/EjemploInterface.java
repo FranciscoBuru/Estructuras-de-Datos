@@ -7,7 +7,7 @@ package Interface;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public interface EjemploInterface {
     

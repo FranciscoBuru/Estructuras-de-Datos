@@ -7,7 +7,7 @@ package abstractas;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
     public class Operario extends Empleado{
         private int horasExtra;
