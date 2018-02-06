@@ -13,7 +13,7 @@ import static Interface.Avion.*;
  * @author Francisco Aramburu
  */
 public class Main {
-    
+   /* 
     public static void main(String[] args) {
         
         Pajaro [] paj = new Pajaro [10];
@@ -44,5 +44,5 @@ public class Main {
         
         
     }
-    
+*/    
 }

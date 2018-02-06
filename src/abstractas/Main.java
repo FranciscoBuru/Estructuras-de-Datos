@@ -10,7 +10,7 @@ package abstractas;
  * @author Francisco Aramburu
  */
 public class Main {
-
+/*
     public static void main(String[] args) {
         Admisitrativo e = new Admisitrativo("casa", "555555552", "Pedro", 56.2);
         System.out.println(e);
@@ -21,6 +21,6 @@ public class Main {
         System.out.println(o.calculaSalario(25, 5,1));
         System.out.println("Hola");
     }
-    
+  */  
 }
 
