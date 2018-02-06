@@ -7,7 +7,7 @@ package Camiones;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public abstract class Camion {
     
