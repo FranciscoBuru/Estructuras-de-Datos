@@ -7,7 +7,7 @@ package Gui;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class EjemploGUI extends javax.swing.JFrame {
 

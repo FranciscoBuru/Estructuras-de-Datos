@@ -8,7 +8,7 @@ package Archivos;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class Bajar {
     

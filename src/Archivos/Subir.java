@@ -12,7 +12,7 @@ import java.io.*;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class Subir  {
     

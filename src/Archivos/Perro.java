@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class Perro implements  Serializable {
     
