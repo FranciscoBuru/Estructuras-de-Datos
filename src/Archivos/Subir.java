@@ -25,7 +25,7 @@ public class Subir  {
         Perro p3 = new Perro("huskey","blanco","taco");
         Perro p4 = new Perro("golden","amarillo","pasita");
         
-        try(FileOutputStream file = new FileOutputStream("Perro."); 
+        try(FileOutputStream file = new FileOutputStream("Gato"); 
                 ObjectOutputStream escribe = new ObjectOutputStream(file);){
             
             escribe.writeObject(p4);
