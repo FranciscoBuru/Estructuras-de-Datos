@@ -9,7 +9,7 @@ package Pilas;
 
 /**
  *
- * @author edi
+ * @author Francsico Aramburu
  */
 public class PilaA <T> implements PilaADT <T> {
     
@@ -81,7 +81,7 @@ public class PilaA <T> implements PilaADT <T> {
     public T peek(){
         T resultado;
         resultado = null;
-        if(isEmpty())
+        if(!isEmpty())
             resultado = colec[tope];
                
         return resultado;

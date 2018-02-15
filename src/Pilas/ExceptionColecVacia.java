@@ -7,7 +7,7 @@ package Pilas;
 
 /**
  *
- * @author edi
+ * @author Francsico Aramburu
  */
 public class ExceptionColecVacia  extends RuntimeException{
     
