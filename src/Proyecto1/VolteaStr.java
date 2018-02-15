@@ -9,7 +9,7 @@ import Pilas.PilaA;
 
 /**
  *
- * @author edi
+ * @author Francsico Aramburu
  */
 public class VolteaStr {
     
