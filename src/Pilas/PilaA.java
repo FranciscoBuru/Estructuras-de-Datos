@@ -100,4 +100,27 @@ public class PilaA <T> implements PilaADT <T> {
     }
     
     
+    public boolean equals(PilaADT <T> p1){
+        
+        boolean aux = true;
+        
+         if(!p1.isEmpty() && !isEmpty()){
+            
+            while(aux){
+                
+                if(!p1.pop().equals(pop())){
+                    aux = false;
+                }
+            }
+            
+            
+        }
+        else{
+            aux = false;
+        }
+        
+        
+        return aux;
+    }
+    
 }

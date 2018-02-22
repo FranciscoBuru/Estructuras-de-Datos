@@ -15,5 +15,6 @@ public  interface  PilaADT<T> {
     public T pop();
     public T peek();
     public boolean isEmpty();
+    public boolean equals(PilaADT <T> dato1);
     
 }
