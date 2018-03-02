@@ -5,11 +5,13 @@
  */
 package Conjuntos;
 
+import java.util.Iterator;
+
 /**
  *
  * @author edi
  */
-public interface ConjuntoADT <T> {
+public interface ConjuntoADT <T> extends Iterable {
     
     public boolean contiene(T dato);
     public boolean estaVacio();
@@ -17,7 +19,8 @@ public interface ConjuntoADT <T> {
     public T quita(T dato);
     public ConjuntoADT <T> union(ConjuntoADT <T> otro); 
     public ConjuntoADT <T> interseccion(ConjuntoADT <T> otro); 
-    public IteradorArreglo <T> iterator();
+    @Override
+    public Iterator <T> iterator();
     public int getCardinalidad();
     
     

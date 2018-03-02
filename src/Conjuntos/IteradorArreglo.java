@@ -5,6 +5,9 @@
  */
 package Conjuntos;
 
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 /**
  *
  * @author edi
@@ -40,7 +43,7 @@ public class IteradorArreglo <T> implements Iterator <T> {
     }
     
     public void remove(){
-        throw new UnsuppertedOperationException();
+        throw new UnsupportedOperationException();
         
     }
     
