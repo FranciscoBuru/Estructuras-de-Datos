@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public interface ConjuntoADT <T> extends Iterable {
     

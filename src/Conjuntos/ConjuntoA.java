@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class ConjuntoA <T> implements ConjuntoADT <T> {
     

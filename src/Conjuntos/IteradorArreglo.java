@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
 
 /**
  *
- * @author edi
+ * @author Francisco Aramburu
  */
 public class IteradorArreglo <T> implements Iterator <T> {
     
