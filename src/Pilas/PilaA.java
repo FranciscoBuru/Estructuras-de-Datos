@@ -10,6 +10,7 @@ package Pilas;
 /**
  *
  * @author Francsico Aramburu
+ * @param <T>
  */
 public class PilaA <T> implements PilaADT <T> {
     

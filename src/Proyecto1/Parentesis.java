@@ -32,7 +32,7 @@ public class Parentesis {
             
             }
             else if(leer.charAt(n)==')'&& revisor.isEmpty()){
-                
+                //Se puede cambiar por un try-catch con Exception
                 return false;
             
             }
