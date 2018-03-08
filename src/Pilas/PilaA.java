@@ -90,7 +90,7 @@ public class PilaA <T> implements PilaADT <T> {
         
         
     /*
-        if(isEmpty())
+        if(!isEmpty())
             return colec [tope];
         else
             trow new ExceptionColecVacia("Pila Vacía")
