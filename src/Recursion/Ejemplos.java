@@ -47,31 +47,26 @@ public class Ejemplos {
         
         
     }
-    
+    //Izquierda a derecha
      public static void imprimeArre1(int arre[] , int n){
         
-        if(n==0)
-             System.out.println("");
+        if(n>0){
         
-        else{
-            imprimeArre1( arre ,  n-1);
-            System.out.println(arre[n-1]);
+        imprimeArre1(arre , n-1);
+        System.out.println(arre[n-1]);
             
         }   
         
         
         
     }
-     
+     //Derecha a izquierda
      public static void imprimeArre2(int arre[] , int n){
         
-        if(n==0)
-             System.out.println("");
-        
-        else{
+        if(n>0){
             
             System.out.println(arre[n-1]);
-            imprimeArre2( arre ,  n-1);
+            imprimeArre2(arre , n-1);
             
         }   
         
