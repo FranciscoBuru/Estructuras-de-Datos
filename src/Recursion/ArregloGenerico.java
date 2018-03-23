@@ -107,17 +107,89 @@ public class  ArregloGenerico<T extends Comparable<T>>{
      
      public int mayor(){
          
-         return mayor(0,0);
+         if(n==0)
+             return -1;
+         
+         else
+            return mayor(0,0);
+         
      }
      //Falta acabar
      private int mayor(int i, int may){
          
-         if(arre[may].compareTo(arre[i])>0){
+         if(i==n)
+             return may;
          
+         if(arre[may].compareTo(arre[i])<0){
+            
+            may = i;
+             
+         }
+         
+             return mayor(i+1, may );
+         
+         
+       
+     }
+     
+     //No usar con arreglos ordenados
+     public void eliminaOcurrencias(T dato){
+            eliminaOcurrencias(dato,0);
+     }
+     
+      private void eliminaOcurrencias(T dato, int i){
+         if(i<n){
+             
+         //Si arre ordenado entonces usa recorreIzq()
+             
+             if(arre[i].equals(dato)){
+                 arre[i]=arre[n-1];
+                 arre[n-1]=null;
+                 n=n-1;
+                 
+             }else
+                 i=i+1;
+         
+            eliminaOcurrencias(dato, i);
+         }
+     }
+      
+      
+      public void ordenaSelDirRec(){
+         if(n>0)
+            ordenaSelDirRec(0,1, arre[0],0);
+     }
+     
+     private void ordenaSelDirRec(int i, int j,T menor, int pos ){
+         
+         if(i<n-1){
+             if(j<n){
+                 if(arre[j].compareTo(menor)<0){
+                     menor=arre[j];
+                     pos=j;
+                 }
+                 ordenaSelDirRec(i,j+1,menor,pos);
+             }
+             else{
+                 arre[pos]=arre[i];
+                 arre[i]=menor;
+                 ordenaSelDirRec(i+1,i+2,arre[i+1],i+1);
+             }
+         }
+     }
+     
+     public String imprimeArre(){
+     
+         String res = "";
+         
+         for(int i =0; i<n; i++){
+             res= res + arre[i];
          }
          
          
-         return 1;
+         return res;
+     
+     
      }
      
      
@@ -129,19 +201,27 @@ public class  ArregloGenerico<T extends Comparable<T>>{
          ArregloGenerico a1 = new  ArregloGenerico();
          
          a1.add("a");
-         a1.add("b");
-         a1.add("c");
-         a1.add("d");
-         a1.add("e");
+        
+         a1.add("a");
          
-         a1.add("g");
-         a1.add("h");
-         a1.add("i");
+         a1.add("a");
+         a1.add("y");
+         a1.add("a");
+        
+         a1.add("a");
+         a1.add("a");
+         
         
          
+         a1.eliminaOcurrencias("y");
+         a1.ordenaSelDirRec();
          
-         System.out.println(a1.toString());
+         System.out.println(a1.imprimeArre());
          
+         
+         
+         
+       
          
     }
     
