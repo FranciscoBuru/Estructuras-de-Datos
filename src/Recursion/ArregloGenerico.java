@@ -155,7 +155,8 @@ public class  ArregloGenerico<T extends Comparable<T>>{
                     pos=j;
                 }
                 ordenaSelDirRec(i,j+1,menor,pos);
-            }else{
+            }
+            else{
                 arre[pos]=arre[i];
                 arre[i]=menor;
                 ordenaSelDirRec(i+1,i+2,arre[i+1],i+1);
