@@ -110,10 +110,180 @@ public class Sudoku {
     
     
     }
+    
+    public boolean resuelve(){
+        
+        for(int f =0; f<9 ; f++){
+            for(int c = 0; c < 9 ; c++){
+                if(sudoku[f][c] == 0){
+                    for(int n =1; n<10 ; n++){
+                        if(valida(f,c,n)){
+                            sudoku[f][c] = n;
+                            if(resuelve()){
+                                return true;
+                            }
+                            else{
+                                sudoku[f][c] = 0;
+                            }
+                        
+                        }
+                    
+                    
+                    }
+                return false;
+                
+                
+                }
+        
+        
+            }
+        }
+        return true;
+        
+        
+        
+        
+    }
+    
+    
+    
+     public  void imprimeSudoku(){
+        
+        String res = "";
+        
+        for(int i =0; i<9; i++){
+            for(int k = 0; k<9 ; k++){
+                
+                if(k==3 || k == 6 ){
+                    res = res + " " + "|" + " ";
+                }
+                
+                
+                res = res + " " + sudoku[i][k];
+                
+            }
+           
+            if(i==2 || i==5){
+                    res = res + "\n " + "------------------------" + "\n";
+            }
+            else
+                 res = res + "\n";
+        }
+        System.out.println(res);
+        
+        
+    }
 
     
     
-    
+    public static void main(String[] args) {
+        
+        int arre[][] = new int [9][9];
+        
+        arre[0][0] = 2;
+        arre[0][1] = 2;
+        arre[0][2] = 0;
+        arre[0][3] = 3;
+        arre[0][4] = 0;
+        arre[0][5] = 8;
+        arre[0][6] = 0;
+        arre[0][7] = 0;
+        arre[0][8] = 0;
+        
+        arre[1][0] = 0;
+        arre[1][1] = 0;
+        arre[1][2] = 6;
+        arre[1][3] = 4;
+        arre[1][4] = 0;
+        arre[1][5] = 0;
+        arre[1][6] = 0;
+        arre[1][7] = 5;
+        arre[1][8] = 0;
+        
+        arre[2][0] = 0;
+        arre[2][1] = 0;
+        arre[2][2] = 0;
+        arre[2][3] = 7;
+        arre[2][4] = 0;
+        arre[2][5] = 0;
+        arre[2][6] = 0;
+        arre[2][7] = 9;
+        arre[2][8] = 0;
+        
+        arre[3][0] = 0;
+        arre[3][1] = 0;
+        arre[3][2] = 1;
+        arre[3][3] = 0;
+        arre[3][4] = 0;
+        arre[3][5] = 0;
+        arre[3][6] = 0;
+        arre[3][7] = 0;
+        arre[3][8] = 8;
+        
+        arre[4][0] = 7;
+        arre[4][1] = 0;
+        arre[4][2] = 0;
+        arre[4][3] = 0;
+        arre[4][4] = 9;
+        arre[4][5] = 0;
+        arre[4][6] = 3;
+        arre[4][7] = 0;
+        arre[4][8] = 0;
+        
+        arre[5][0] = 3;
+        arre[5][1] = 0;
+        arre[5][2] = 0;
+        arre[5][3] = 0;
+        arre[5][4] = 0;
+        arre[5][5] = 0;
+        arre[5][6] = 0;
+        arre[5][7] = 0;
+        arre[5][8] = 5;
+        
+        arre[6][0] = 0;
+        arre[6][1] = 0;
+        arre[6][2] = 0;
+        arre[6][3] = 0;
+        arre[6][4] = 0;
+        arre[6][5] = 2;
+        arre[6][6] = 0;
+        arre[6][7] = 0;
+        arre[6][8] = 6;
+        
+        arre[7][0] = 0;
+        arre[7][1] = 8;
+        arre[7][2] = 0;
+        arre[7][3] = 0;
+        arre[7][4] = 1;
+        arre[7][5] = 0;
+        arre[7][6] = 5;
+        arre[7][7] = 0;
+        arre[7][8] = 0;
+        
+        arre[8][0] = 5;
+        arre[8][1] = 2;
+        arre[8][2] = 0;
+        arre[8][3] = 0;
+        arre[8][4] = 8;
+        arre[8][5] = 0;
+        arre[8][6] = 0;
+        arre[8][7] = 0;
+        arre[8][8] = 0;
+        
+        
+        Sudoku s1  = new Sudoku(arre);
+        
+      
+        
+        System.out.println(s1.resuelve());
+        
+        s1.imprimeSudoku();
+        
+        
+        
+        
+    }
+   
     
     
     
